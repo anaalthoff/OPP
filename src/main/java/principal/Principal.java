@@ -14,6 +14,7 @@ public class Principal {
         System.out.println("5 - Retângulo");
         System.out.println("6 - Triângulo");
         System.out.println("7 - Veículo");
+        System.out.println("8 - Associação Unidirecional Pessoa e Endereço");
 
         int escolha = scanner.nextInt();
         scanner.nextLine();
@@ -39,6 +40,9 @@ public class Principal {
                 break;
             case 7:
                 PrincipalVeiculo.main(args);
+                break;
+            case 8:
+                PrincipalAssociacaoPessoaEndereco.main(args);
                 break;
             default:
                 System.out.println("Opção inválida.");
