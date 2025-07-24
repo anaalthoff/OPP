@@ -15,6 +15,7 @@ public class Principal {
         System.out.println("6 - Triângulo");
         System.out.println("7 - Veículo");
         System.out.println("8 - Associação Unidirecional Pessoa e Endereço");
+        System.out.println("9 - Associação Bilateral Cliente e Conta Bancária");
 
         int escolha = scanner.nextInt();
         scanner.nextLine();
@@ -43,6 +44,9 @@ public class Principal {
                 break;
             case 8:
                 PrincipalAssociacaoPessoaEndereco.main(args);
+                break;
+            case 9:
+                PrincipalAssociacaoBilateralClienteConta.main(args);
                 break;
             default:
                 System.out.println("Opção inválida.");
