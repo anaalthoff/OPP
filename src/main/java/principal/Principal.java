@@ -16,6 +16,7 @@ public class Principal {
         System.out.println("7 - Veículo");
         System.out.println("8 - Associação Unidirecional Pessoa e Endereço");
         System.out.println("9 - Associação Bilateral Cliente e Conta Bancária");
+        System.out.println("10 - Herança Gerente e Funcionário");
 
         int escolha = scanner.nextInt();
         scanner.nextLine();
@@ -47,6 +48,9 @@ public class Principal {
                 break;
             case 9:
                 PrincipalAssociacaoBilateralClienteConta.main(args);
+                break;
+            case 10:
+                PrincipalHerancaGerenteFuncionario.main(args);
                 break;
             default:
                 System.out.println("Opção inválida.");
