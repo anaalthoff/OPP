@@ -1,6 +1,8 @@
 package classes;
 
-public class Gerente extends Funcionario2 {
+import interfaces.IGerente;
+
+public class Gerente extends Funcionario2 implements IGerente {
 
     private double abono;
 
@@ -15,5 +17,9 @@ public class Gerente extends Funcionario2 {
 
     public void setAbono(double abono) {
         this.abono = abono;
+    }
+
+    public double getSalarioTotal() {
+        return getAbono() + getSalarioBase();
     }
 }
