@@ -1,6 +1,6 @@
 package principal;
 
-import classes.Funcionario;
+import heranca.Funcionario;
 import java.util.Scanner;
 
 public class PrincipalFuncionario {

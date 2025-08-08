@@ -1,6 +1,6 @@
 package principal;
 
-import classes.Calculadora;
+import introducao.classes.Calculadora;
 import java.util.Scanner;
 
 public class PrincipalCalculadora {

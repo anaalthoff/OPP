@@ -1,7 +1,7 @@
 package principal;
 
-import classes.Endereco;
-import classes.Pessoa;
+import associacao.unidirecional.Endereco;
+import associacao.unidirecional.Pessoa;
 import java.util.Scanner;
 
 public class PrincipalAssociacaoPessoaEndereco {

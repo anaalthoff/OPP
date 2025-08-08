@@ -1,6 +1,6 @@
 package principal;
 
-import classes.Gerente;
+import heranca.Gerente;
 import java.util.Scanner;
 
 public class PrincipalHerancaGerenteFuncionario {

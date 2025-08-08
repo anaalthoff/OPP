@@ -1,6 +1,6 @@
 package principal;
 
-import classes.Retangulo;
+import introducao.classes.Retangulo;
 import java.util.Scanner;
 
 public class PrincipalRetangulo {

@@ -1,6 +1,6 @@
 package principal;
 
-import classes.Data;
+import introducao.classes.Data;
 import java.util.Scanner;
 
 public class PrincipalData {

@@ -1,7 +1,7 @@
 package principal;
 
-import classes.JogadorFutebol;
-import classes.TecnicoFutebol;
+import heranca.JogadorFutebol;
+import heranca.TecnicoFutebol;
 import java.util.Scanner;
 
 public class PrincipalHerancaCampeonato {

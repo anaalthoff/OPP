@@ -1,7 +1,7 @@
 package principal;
 
-import classes.Cliente2;
-import classes.ContaBancaria2;
+import associacao.bidirecional.Cliente2;
+import associacao.bidirecional.ContaBancaria2;
 
 public class PrincipalAssociacaoBilateralClienteConta {
 

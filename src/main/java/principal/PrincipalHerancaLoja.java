@@ -1,8 +1,8 @@
 package principal;
 
 import java.util.Scanner;
-import classes.LojaFisica;
-import classes.LojaVirtual;
+import heranca.LojaFisica;
+import heranca.LojaVirtual;
 
 public class PrincipalHerancaLoja {
 

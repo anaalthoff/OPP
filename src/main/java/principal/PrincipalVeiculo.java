@@ -1,7 +1,7 @@
 package principal;
 
-import classes.FabricaVeiculos;
-import classes.Veiculo;
+import introducao.classes.FabricaVeiculos;
+import introducao.classes.Veiculo;
 import java.util.Scanner;
 
 public class PrincipalVeiculo {

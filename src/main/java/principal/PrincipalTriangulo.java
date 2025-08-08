@@ -1,6 +1,6 @@
 package principal;
 
-import classes.Triangulo;
+import introducao.classes.Triangulo;
 import java.util.Scanner;
 
 public class PrincipalTriangulo {

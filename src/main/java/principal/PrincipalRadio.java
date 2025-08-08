@@ -1,6 +1,6 @@
 package principal;
 
-import classes.Radio;
+import introducao.classes.Radio;
 import java.util.Scanner;
 
 public class PrincipalRadio {
