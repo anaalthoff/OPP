@@ -4,7 +4,7 @@ import poliformismo.Circulo;
 import poliformismo.FiguraGeometrica;
 import poliformismo.Triangulo;
 
-public class PrincipalHerancaESobrescrita {
+public class PrincipalPoliformismoESobrescrita {
 
     public static void main(String[] args) {
         //Testa uma figura geométrica
