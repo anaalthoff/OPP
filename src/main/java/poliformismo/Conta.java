@@ -1,23 +1,25 @@
 package poliformismo;
 
-public class Conta {
+public abstract class Conta {
 
-    private double saldo;
+    private String nome;
 
     public Conta() {
-        this(0);
+        this("");
     }
 
-    public Conta(double saldo) {
-        this.saldo = saldo;
+    public Conta(String nome) {
+        this.nome = nome;
     }
 
-    public double getSaldo() {
-        return saldo;
+    public String getNome() {
+        return nome;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-    
+
+    public abstract double getSaldo();
+
 }

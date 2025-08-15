@@ -2,15 +2,25 @@ package poliformismo;
 
 public class ContaPoupanca extends Conta {
 
+    private double saldo;
     private double juros;
 
     public ContaPoupanca() {
-        this(0, 0);
+        this("", 0, 0);
     }
 
-    public ContaPoupanca(double saldo, double juros) {
-        super(saldo);
+    public ContaPoupanca(String nome, double saldo, double juros) {
+        super(nome);
+        this.saldo = saldo;
         this.juros = juros;
+    }
+
+    public double getSaldo() {
+        return saldo + juros;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public double getJuros() {
@@ -22,10 +32,7 @@ public class ContaPoupanca extends Conta {
     }
 
     public void setDeposito(double valor) {
-        super.setSaldo(super.getSaldo() + valor);
+        saldo += valor;
     }
 
-    public double getSaldo() {
-        return super.getSaldo() + juros;
-    }
 }

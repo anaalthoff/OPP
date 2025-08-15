@@ -2,15 +2,25 @@ package poliformismo;
 
 public class ContaCorrente extends Conta {
 
+    private double saldo;
     private double taxaServico;
 
     public ContaCorrente() {
-        this(0, 0);
+        this("", 0, 0);
     }
 
-    public ContaCorrente(double saldo, double taxaServico) {
-        super(saldo);
+    public ContaCorrente(String nome, double saldo, double taxaServico) {
+        super(nome);
+        setSaldo(saldo);
         setTaxaServico(taxaServico);
+    }
+
+    public double getSaldo() {
+        return saldo - taxaServico;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public double getTaxaServico() {
@@ -22,10 +32,7 @@ public class ContaCorrente extends Conta {
     }
 
     public void setDeposito(double valor) {
-        super.setSaldo(super.getSaldo() + valor);
+        saldo += valor;
     }
 
-    public double getSaldo() {
-        return super.getSaldo() - taxaServico;
-    }
 }
