@@ -1,6 +1,6 @@
 package poliformismo;
 
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
 
     private String cor;
 
@@ -20,7 +20,5 @@ public class FiguraGeometrica {
         this.cor = cor;
     }
 
-    public double getArea() {
-        return 0;
-    }
+    public abstract double getArea();
 }

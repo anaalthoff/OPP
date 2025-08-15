@@ -7,9 +7,6 @@ import poliformismo.Triangulo;
 public class PrincipalPoliformismoESobrescrita {
 
     public static void main(String[] args) {
-        //Testa uma figura geométrica
-        FiguraGeometrica figura = new FiguraGeometrica("verde");
-        System.out.println("A area da figura e = " + figura.getArea());
 
         //Testa uma figura do tipo triângulo
         FiguraGeometrica figuraTriangulo = new Triangulo("verde", 2, 3);
