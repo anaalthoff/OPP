@@ -1,16 +1,17 @@
 package poliformismo;
 
-public class Triangulo extends FiguraGeometrica {
+public class Triangulo implements ICalculo {
 
     private double base;
     private double altura;
+    private String cor;
 
     public Triangulo() {
         this("", 0, 0);
     }
 
     public Triangulo(String cor, double base, double altura) {
-        super(cor);
+        setCor(cor);
         setBase(base);
         setAltura(altura);
     }
@@ -29,6 +30,14 @@ public class Triangulo extends FiguraGeometrica {
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
     }
 
     public double getArea() {
