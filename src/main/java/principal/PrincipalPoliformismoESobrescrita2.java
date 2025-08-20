@@ -1,38 +1,44 @@
 package principal;
 
-import poliformismo.Conta;
+// import poliformismo.Conta;
 import poliformismo.ContaCorrente;
 import poliformismo.ContaPoupanca;
+import poliformismo.ISaldo;
 
 public class PrincipalPoliformismoESobrescrita2 {
 
     public static void main(String[] args) {
 
-        //Declara e instância uma conta no banco do brasil com o saldo de 1000 e 100 de taxa de serviço
-        ContaCorrente cc = new ContaCorrente("Banco do Brasil", 1000, 100);
-        System.out.println("Saldo " + cc.getNome() + " : " + cc.getSaldo());
+        //Testa um ContaCorrente que implementa ISaldo
+        ISaldo cc = new ContaCorrente(200, 30);
+        System.out.println("Saldo conta corrente:" + cc.getSaldo());
 
-        //Realiza um depósito
-        System.out.println("Realizando um depósito em ContaCorrente!");
-        cc.setDeposito(100);
-        System.out.println("Saldo " + cc.getNome() + " : " + cc.getSaldo());
+        //Realiza um depósito na conta corrente
+        System.out.println("Realizando um depósito em conta corrente");
+        cc.setDeposito(50);
+        System.out.println("Saldo conta corrente:" + cc.getSaldo());
 
-        //Declara e instância uma conta no bradesco com o saldo de 2000 e 10 de juros
-        ContaPoupanca cp = new ContaPoupanca("Bradesco", 2000, 10);
-        System.out.println("Saldo " + cp.getNome() + " : " + cp.getSaldo());
+        //Testa uma ContaPoupanca que implementa ISaldo
+        ISaldo cp = new ContaPoupanca(1000, 20);
+        System.out.println("Saldo conta poupanca:" + cp.getSaldo());
 
-        //Declara um vetor de contas
-        Conta recursos[] = new Conta[4];
-        recursos[0] = cc;
-        recursos[1] = cp;
-        recursos[2] = new ContaCorrente("Bamerindus", 500, 10);
-        recursos[3] = new ContaPoupanca("Itau", 2500, 5);
+        //Realiza um depósito na conta poupanca
+        System.out.println("Realizando um depósito em conta poupança");
+        cp.setDeposito(100);
+        System.out.println("Saldo conta poupança:" + cp.getSaldo());
 
-        //Calcula o saldo total das contas
+        //Cria um saldo familiar de ISaldo com objetos do tipo ContaCorrente e ContaPoupanca
+        ISaldo saldoFamiliar[] = new ISaldo[4];
+        saldoFamiliar[0] = new ContaCorrente(2000, 30);
+        saldoFamiliar[1] = new ContaPoupanca(1000, 30);
+        saldoFamiliar[2] = new ContaCorrente(2000, 30);
+        saldoFamiliar[3] = new ContaPoupanca(1000, 30);
+
+        //Calcula saldo familiar
         double total = 0;
-        for (int i = 0; i < 4; i++) {
-            total = total + recursos[i].getSaldo();
+        for (int i = 0; i < 3; i++) {
+            total = total + saldoFamiliar[i].getSaldo();
         }
-        System.out.println("Saldo total: " + total);
+        System.out.println("Saldo total:" + total);
     }
 }

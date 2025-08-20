@@ -1,16 +1,15 @@
 package poliformismo;
 
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca implements ISaldo {
 
     private double saldo;
     private double juros;
 
     public ContaPoupanca() {
-        this("", 0, 0);
+        this(0, 0);
     }
 
-    public ContaPoupanca(String nome, double saldo, double juros) {
-        super(nome);
+    public ContaPoupanca(double saldo, double juros) {
         this.saldo = saldo;
         this.juros = juros;
     }

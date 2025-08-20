@@ -1,16 +1,15 @@
 package poliformismo;
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente implements ISaldo {
 
     private double saldo;
     private double taxaServico;
 
     public ContaCorrente() {
-        this("", 0, 0);
+        this(0, 0);
     }
 
-    public ContaCorrente(String nome, double saldo, double taxaServico) {
-        super(nome);
+    public ContaCorrente(double saldo, double taxaServico) {
         setSaldo(saldo);
         setTaxaServico(taxaServico);
     }
