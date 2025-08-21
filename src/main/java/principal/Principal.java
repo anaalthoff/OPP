@@ -21,6 +21,7 @@ public class Principal {
         System.out.println("12 - Herança Tecnico e Jogador");
         System.out.println("13 - Poliformismo Herança e Sobrescrita");
         System.out.println("14 - Poliformismo Herança e Sobrescrita2");
+        System.out.println("15 - Tratamento de Execções e Entrada e Saída");
 
         int escolha = scanner.nextInt();
         scanner.nextLine();
@@ -67,6 +68,9 @@ public class Principal {
                 break;
             case 14:
                 PrincipalPoliformismoESobrescrita2.main(args);
+                break;
+            case 15:
+                PrincipalEntradaESaidaAluno.main(args);
                 break;
             default:
                 System.out.println("Opção inválida.");
