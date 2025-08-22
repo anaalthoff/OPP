@@ -22,6 +22,7 @@ public class Principal {
         System.out.println("13 - Poliformismo Herança e Sobrescrita");
         System.out.println("14 - Poliformismo Herança e Sobrescrita2");
         System.out.println("15 - Tratamento de Execções e Entrada e Saída");
+        System.out.println("16 - Tratamento de Execções e Entrada e Saída2");
 
         int escolha = scanner.nextInt();
         scanner.nextLine();
@@ -71,6 +72,9 @@ public class Principal {
                 break;
             case 15:
                 PrincipalEntradaESaidaAluno.main(args);
+                break;
+            case 16:
+                PrincipalEntradaESaidaArquivo.main(args);
                 break;
             default:
                 System.out.println("Opção inválida.");
