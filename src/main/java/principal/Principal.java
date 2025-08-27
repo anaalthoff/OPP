@@ -23,6 +23,7 @@ public class Principal {
         System.out.println("14 - Poliformismo Herança e Sobrescrita2");
         System.out.println("15 - Tratamento de Execções e Entrada e Saída");
         System.out.println("16 - Tratamento de Execções e Entrada e Saída2");
+        System.out.println("17 - Interface gráfica para cálculo de área do triângulo");
 
         int escolha = scanner.nextInt();
         scanner.nextLine();
@@ -76,6 +77,8 @@ public class Principal {
             case 16:
                 PrincipalEntradaESaidaArquivo.main(args);
                 break;
+            case 17:
+                PrincipalInterfaceTriangulo.main(args);
             default:
                 System.out.println("Opção inválida.");
         }
