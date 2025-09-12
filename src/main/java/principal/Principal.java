@@ -24,6 +24,7 @@ public class Principal {
         System.out.println("15 - Tratamento de Execções e Entrada e Saída");
         System.out.println("16 - Tratamento de Execções e Entrada e Saída2");
         System.out.println("17 - Interface gráfica para cálculo de área do triângulo");
+        System.out.println("18 - Interface gráfica para cálculo da média do aluno");
 
         int escolha = scanner.nextInt();
         scanner.nextLine();
@@ -79,6 +80,8 @@ public class Principal {
                 break;
             case 17:
                 PrincipalInterfaceTriangulo.main(args);
+            case 18:
+                PrincipalInterfaceAluno.main(args);
             default:
                 System.out.println("Opção inválida.");
         }
