@@ -23,27 +23,8 @@ O objetivo é consolidar conceitos fundamentais de orientação a objetos, atrav
 - Agregação e Composição
 - Dependência
 - Herança e sobrescrita de métodos
+- Associação, agregação, dependência, composição, multiplicidade
 - Versionamento com Git e GitHub
-
-## Estrutura do Projeto
-
-src/
-
-├── principal/ # Contém classes com método main (execução), separado por teste
-
-└── classes/ # Contém as classes utilizadas como modelo (ex: Retangulo, Triangulo, etc)
-
-└── interfaces/ # Contém as assinaturas dos métodos das classes (ex: IRetangulo, ITriangulo, etc)
-
-> A estrutura irá ser complementada conforme os exemplos forem sendo abordados: encapsulamento, herança, associação etc.
-
-## Exemplos de classes
-
-- `Retangulo`: classe com encapsulamento de atributos e métodos de acesso
-- `Operacao`: métodos com retorno, sem retorno e escopo de atributos
-- `FiguraGeometrica`, `Triangulo`, `Circulo`: exemplo de **herança** e **sobrescrita**
-- `Aluno`, `Professor`, `Turma`: exemplos de **associação** e **agregação**
-- `ClasseA`, `ClasseB`, etc: exemplos genéricos de dependência, composição e multiplicidade
 
 ## Tecnologias
 
